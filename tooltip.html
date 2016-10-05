@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tooltip</h1>
+                <button type="button" class="btn btn-default tooltip-example" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+                <button type="button" class="btn btn-default tooltip-example" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+                <button type="button" id="tooltip-example" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        // $('.tooltip-example').tooltip();
+        // $('#tooltip-example').tooltip();
+    </script>
+</body>
+</html>
